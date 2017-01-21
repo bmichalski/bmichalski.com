@@ -30,6 +30,7 @@
     "build-all": "node build-all.js",
     "build-copy": "node build-copy.js",
     "build-metalsmith": "node build-metalsmith.js",
+    "build-metalsmith-copy": "node build-metalsmith-copy.js",
     "build-main-css": "node build-main-css.js",
     "build-vendor-css": "node build-vendor-css.js",
     "build-vendor-js": "node build-vendor-js.js"

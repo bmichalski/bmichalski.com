@@ -10,6 +10,7 @@ const promise = Promise.all([
   fs.copy('temp/vendor.min.js', 'build/js/vendor.min.js'),
   fs.copy('temp/main.min.css', 'build/css/main.min.css'),
   fs.copy('build/about/index.html', 'build/index.html'),
+  fs.copy('CNAME', 'build/CNAME'),
   fs.copy('img', 'build/img'),
   globby(__dirname + '/node_modules/font-awesome/fonts/*')
     .then(function (files) {
