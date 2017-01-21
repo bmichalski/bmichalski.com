@@ -6,11 +6,11 @@ const fs = require('fs-promise')
 
 const cleanCss = new CleanCss()
 
+const paths = require(__dirname + '/paths')
+
 const promise = new Promise(function (resolve, reject) {
   cleanCss.minify(
-    [
-      'css/main.css',
-    ],
+    paths.css.main.src,
     function (err, minified) {
       if (err) {
         return reject(err)
@@ -22,7 +22,7 @@ const promise = new Promise(function (resolve, reject) {
 
 promise
   .then(function (styles) {
-    return fs.outputFile('temp/main.min.css', styles)
+    return fs.outputFile(paths.css.main.temp, styles)
   })
   .then(function () {
     console.log('Main CSS done')

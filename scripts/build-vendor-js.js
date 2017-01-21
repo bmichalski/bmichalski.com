@@ -4,19 +4,17 @@ const Promise = require('bluebird')
 const uglify = require('uglify-js')
 const fs = require('fs-promise')
 
+const paths = require(__dirname + '/paths')
+
 const promise = new Promise(function (resolve) {
-  const result = uglify.minify([
-    'node_modules/jquery/dist/jquery.slim.js',
-    'node_modules/tether/dist/js/tether.min.js',
-    'node_modules/bootstrap/dist/js/bootstrap.min.js'
-  ])
+  const result = uglify.minify(paths.js.vendor.src)
 
   resolve(result.code)
 })
 
 promise
   .then(function (code) {
-    return fs.outputFile('temp/vendor.min.js', code)
+    return fs.outputFile(paths.js.vendor.temp, code)
   })
   .then(function () {
     console.log('Vendor JS done')

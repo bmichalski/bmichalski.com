@@ -24,6 +24,8 @@ Handlebars.registerHelper('debug', function(optionalValue) {
   }
 })
 
+const paths = require(__dirname + '/paths')
+
 const promise = new Promise(function (resolve, reject) {
   Metalsmith(__dirname)
     .metadata({
@@ -34,8 +36,8 @@ const promise = new Promise(function (resolve, reject) {
       },
       authorName: 'Benjamin Michalski'
     })
-    .source('./src')
-    .destination('./build')
+    .source(paths.metalsmith.src)
+    .destination(paths.metalsmith.dest)
     .clean(true)
     .use(collections({
       posts: {
@@ -52,8 +54,9 @@ const promise = new Promise(function (resolve, reject) {
     }))
     .use(layouts({
       engine: 'handlebars',
-      partials: 'partials',
-      strict: true
+      strict: true,
+      directory: paths.metalsmith.layouts.directory,
+      partials: paths.metalsmith.layouts.partials
     }))
     .build(function(err) {
       if (err) {

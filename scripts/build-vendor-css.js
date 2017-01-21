@@ -6,12 +6,11 @@ const fs = require('fs-promise')
 
 const cleanCss = new CleanCss()
 
+const paths = require(__dirname + '/paths')
+
 const promise = new Promise(function (resolve, reject) {
   cleanCss.minify(
-    [
-      'node_modules/bootstrap/dist/css/bootstrap.min.css',
-      'node_modules/font-awesome/css/font-awesome.css'
-    ],
+    paths.css.vendor.src,
     function (err, minified) {
       if (err) {
         return reject(err)
@@ -28,7 +27,7 @@ promise
     return styles
   })
   .then(function (styles) {
-    return fs.outputFile('temp/vendor.min.css', styles)
+    return fs.outputFile(paths.css.vendor.temp, styles)
   })
   .then(function () {
     console.log('Vendor CSS done')
