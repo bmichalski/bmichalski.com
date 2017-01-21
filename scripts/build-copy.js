@@ -14,6 +14,10 @@ const promise = Promise.all([
   fs.copy(paths.index.src, paths.index.dest),
   fs.copy(paths.cname.src, paths.cname.dest),
   fs.copy(paths.img.src, paths.img.dest),
+  fs.move(paths.not_found.src, paths.not_found.dest)
+    .then(function () {
+      return fs.rmdir(paths.not_found.src_folder)
+    }),
   globby(paths.fonts.vendor.fontAwesome.srcGlob)
     .then(function (files) {
       const promises = []

@@ -10,6 +10,11 @@ module.exports = {
     src: root + '/build/about/index.html',
     dest: root + '/build/index.html'
   },
+  not_found: {
+    src: root + '/build/page-not-found/index.html',
+    src_folder: root + '/build/page-not-found',
+    dest: root + '/build/404.html',
+  },
   metalsmith: {
     src: root + '/src',
     dest: root + '/build',
