@@ -14,6 +14,7 @@ const promise = Promise.all([
   fs.copy(paths.index.src, paths.index.dest),
   fs.copy(paths.cname.src, paths.cname.dest),
   fs.copy(paths.img.src, paths.img.dest),
+  fs.copy(paths.favicon.src, paths.favicon.dest),
   fs.move(paths.not_found.src, paths.not_found.dest)
     .then(function () {
       return fs.rmdir(paths.not_found.src_folder)
@@ -23,8 +24,6 @@ const promise = Promise.all([
       const promises = []
 
       files.forEach(function (file) {
-        console.log(paths.fonts.vendor.fontAwesome.destPrefix + path.basename(file))
-
         promises.push(
           fs.copy(
             file,

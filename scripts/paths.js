@@ -59,6 +59,10 @@ module.exports = {
     src: root + '/img',
     dest: root + '/build/img'
   },
+  favicon: {
+    src: root + '/src/favicon.ico',
+    dest: root + '/build/favicon.ico'
+  },
   fonts: {
     vendor: {
       fontAwesome: {
