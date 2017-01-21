@@ -1,0 +1,24 @@
+<div class="post">
+    <div class="header">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ title }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                by {{ authorName }}
+            </div>
+        </div>
+    </div>
+    <div class="content row">
+        <div class="col-md-12">
+            {{{ contents }}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 created-at">
+            Created on {{ formatDate createdAt day="numeric" month="long" year="numeric" }}
+        </div>
+    </div>
+</div>

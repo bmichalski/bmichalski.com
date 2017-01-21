@@ -1,0 +1,11 @@
+header {
+    margin-bottom: 1em;
+}
+
+.post .header {
+    margin-bottom: 1em;
+}
+
+.post .created-at {
+    font-size: 0.9em;
+}
