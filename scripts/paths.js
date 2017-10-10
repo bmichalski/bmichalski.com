@@ -44,7 +44,7 @@ module.exports = {
     vendor: {
       src: [
         root + '/node_modules/jquery/dist/jquery.slim.js',
-        root + '/node_modules/tether/dist/js/tether.min.js',
+        root + '/node_modules/popper.js/dist/umd/popper.js',
         root + '/node_modules/bootstrap/dist/js/bootstrap.min.js'
       ],
       temp: root + '/temp/vendor.min.js',

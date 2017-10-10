@@ -2,14 +2,13 @@
   "name": "bmichalski.io",
   "description": "bmichalski.io",
   "license": "MIT",
-  "version": "1.0.0",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/bmichalski/bmichalski.github.io"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmichalski/bmichalski.github.io"
   },
   "devDependencies": {
     "bluebird": "^3.4.7",
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "^4.0.0-beta",
     "clean-css": "^3.4.23",
     "font-awesome": "^4.7.0",
     "fs-promise": "^1.0.0",
@@ -23,6 +22,7 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-page-titles": "^1.0.2",
     "metalsmith-permalinks": "^0.5.0",
+    "popper.js": "^1.12.5",
     "uglify-js": "^2.7.5"
   },
   "scripts": {
