@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About | bmichalski.io</title>
+    <meta name="description" content="About" />
+    <link rel="canonical" href="http://bmichalski.io/about" />
+    <link type="text/css" rel="stylesheet" href="/css/vendor.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/main.min.css" />
+    <script type="text/javascript" src="/js/vendor.min.js"></script>
+    <link rel="icon" href="/favicon.ico?v=3" />
+  </head>
+  <body>
+    <header class="navbar navbar-light bg-dark text-white">
+      <a class="navbar-brand text-white" href="/">bmichalski.io</a>
+    </header>
+    <div class="container">
+      <h2 id="who-i-am">Who I am</h2>
+      <p><i class="fa fa-male"></i>&nbsp;&nbsp;I am Benjamin Michalski.</p>
+      <h2 id="what-i-do">What I do</h2>
+      <p><i class="fa fa-briefcase"></i>&nbsp;I work as a software engineer.<br><i class="fa fa-clock-o"></i>&nbsp;I&#39;ve been building web apps since 2011<span id="years-counter-wrapper" style="display: none;"> (<span id="years-counter"></span> years, and counting)</span>.</p>
+      <h2 id="work-samples">Work samples</h2>
+      <p><i class="fa fa-github"></i>&nbsp;You can checkout my <a href="https://github.com/bmichalski">GitHub repositories</a>.</p>
+      <h2 id="resume">Resume</h2>
+      <p><i class="fa fa-linkedin-square"></i>&nbsp;See my resume on <a href="https://www.linkedin.com/in/benmichalski">LinkedIn</a>.</p>
+      <div id="contact-info-wrapper" style="display: none;"><h2>Contact me</h2><span><i class="fa fa-envelope"></i> By email: <a id="email"></a></span></div>
+      
+      <script type="text/javascript">
+        'use strict'
+      
+        var parts = [
+         'b',
+         'e',
+         'n',
+         'j',
+         'a',
+         'm',
+         'i',
+         'n',
+         '.',
+         'm',
+         'i',
+         'c',
+         'h',
+         'a',
+         'l',
+         's',
+         'k',
+         'i',
+         '@',
+         'g',
+         'm',
+         'a',
+         'i',
+         'l',
+         '.',
+         'c',
+         'o',
+         'm',
+        ]
+      
+        var full = parts.join('')
+      
+        $('#document').ready(function () {
+          $('#years-counter').html(((new Date).getFullYear() - 2011) + 1)
+      
+          $('#email').html(full)
+          $('#email').attr('href', 'mailto:' + full)
+      
+          $('#years-counter-wrapper').show()
+          $('#contact-info-wrapper').show()
+        })
+      </script>
+    </div>
+  </body>
+</html>
