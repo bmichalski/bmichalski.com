@@ -1,5 +1,5 @@
 <div class="posts">
     {{#each collections.posts }}
-        {{ formatDate this.createdAt day="numeric" month="long" year="numeric" }} - <a href="{{ canonicalUrl }}">{{ this.title }}</a>
+        {{ formatDate this.createdAt day="2-digit" month="2-digit" year="numeric" }} - <a href="{{ canonicalUrl }}">{{ this.title }}</a>
     {{/each}}
 </div>
