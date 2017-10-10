@@ -11,9 +11,9 @@
     <link rel="icon" href="/favicon.ico?v=3" />
   </head>
   <body>
-    <header class="navbar navbar-toggleable-xl navbar-light bg-faded">
-      <a class="navbar-brand" href="/">bmichalski.io</a>
-      <div class="collapse navbar-collapse">
+    <header class="navbar navbar-light bg-dark text-white">
+      <a class="navbar-brand text-white" href="/">bmichalski.io</a>
+      {{!--<div class="collapse navbar-collapse">
         <ul class="navbar-nav d-flex justify-content-end">
           <li class="nav-item">
             <a class="nav-link" href="/about">About</a>
@@ -22,7 +22,7 @@
             <a class="nav-link" href="/posts">Posts</a>
           </li>
         </ul>
-      </div>
+      </div>--}}
     </header>
     <div class="container">
       {{> (lookup . 'contentPartial') }}
