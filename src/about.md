@@ -14,8 +14,6 @@ canonicalUrl: /about
 ## Resume
 <i class="fa fa-linkedin-square"></i>&nbsp;See my resume on [LinkedIn](https://www.linkedin.com/in/benmichalski).
 <div id="contact-info-wrapper" style="display: none;"><h2>Contact me</h2><span><i class="fa fa-envelope"></i> By email: <a id="email"></a></span></div>
-## What tools do I use?
-<i class="fa fa-wrench"></i>&nbsp;Mainly [PHP](https://secure.php.net/) and [JavaScript](https://developer.mozilla.org/en/docs/Web/JavaScript) (client / server), with great framework / libraries such as [Symfony](https://symfony.com/), [React](https://facebook.github.io/react/), [Hapi](https://hapijs.com/) and many others.
 
 <script type="text/javascript">
   'use strict'
