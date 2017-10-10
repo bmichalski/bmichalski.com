@@ -26,13 +26,15 @@
     "uglify-js": "^2.7.5"
   },
   "scripts": {
-    "build": "node scripts/build.js",
     "build-all": "node scripts/build-all.js",
     "build-copy": "node scripts/build-copy.js",
+
     "build-metalsmith": "node scripts/build-metalsmith.js",
     "build-metalsmith-copy": "node scripts/build-metalsmith-copy.js",
+
     "build-main-css": "node scripts/build-main-css.js",
     "build-vendor-css": "node scripts/build-vendor-css.js",
+
     "build-vendor-js": "node scripts/build-vendor-js.js"
   }
 }
