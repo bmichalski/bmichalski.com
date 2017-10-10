@@ -1,15 +1,15 @@
 'use strict'
 
-const Metalsmith  = require('metalsmith')
-const collections = require('metalsmith-collections')
-const layouts     = require('metalsmith-layouts')
-const markdown    = require('metalsmith-markdown')
-const permalinks  = require('metalsmith-permalinks')
-const pageTitles  = require('metalsmith-page-titles')
-const Promise = require('bluebird')
-
+const Metalsmith     = require('metalsmith')
+const collections    = require('metalsmith-collections')
+const layouts        = require('metalsmith-layouts')
+const markdown       = require('metalsmith-markdown')
+const permalinks     = require('metalsmith-permalinks')
+const pageTitles     = require('metalsmith-page-titles')
+const Promise        = require('bluebird')
 const Handlebars     = require('handlebars')
 const HandlebarsIntl = require('handlebars-intl')
+
 HandlebarsIntl.registerWith(Handlebars)
 
 Handlebars.registerHelper('debug', function(optionalValue) {
