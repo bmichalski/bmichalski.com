@@ -1,6 +1,6 @@
-#bmichalski.io
+# bmichalski.io
 
-##How to start working
+## How to start working
 ```Shell
 git clone --recursive git@github.com:bmichalski/bmichalski.io.git && \
 cd bmichalski.io/build && \
@@ -9,7 +9,7 @@ cd .. && \
 rm -rf build/*
 ```
 
-##How to build
+## How to build
 ```Shell
 yarn run build-all
 ```
