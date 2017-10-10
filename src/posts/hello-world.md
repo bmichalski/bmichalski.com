@@ -2,9 +2,9 @@
 layout: post.html
 title: Hello, world!
 description: Hello world
-canonicalUrl: /hello-world
+canonicalUrl: /posts/hello-world
 collection: posts
-createdAt: 2016-01-15 11:15:00
+createdAt: 2017-01-15 11:15:00
 ---
 ## But why?
 
