@@ -8,7 +8,7 @@ canonicalUrl: /about
 <i class="fa fa-male"></i>&nbsp;&nbsp;I am Benjamin Michalski.
 ## What I do
 <i class="fa fa-briefcase"></i>&nbsp;I work as a software engineer.
-<i class="fa fa-clock-o"></i>&nbsp;I've been building web apps since 2011<span id="years-counter-wrapper" style="display: none;"> (<span id="years-counter"></span> years, and counting)<span>.
+<i class="fa fa-clock-o"></i>&nbsp;I've been building web apps since 2011<span id="years-counter-wrapper" style="display: none;"> (<span id="years-counter"></span> years, and counting)</span>.
 ## Work samples
 <i class="fa fa-github"></i>&nbsp;You can checkout my [GitHub repositories](https://github.com/bmichalski).
 ## Resume
