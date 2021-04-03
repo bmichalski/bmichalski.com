@@ -12,7 +12,7 @@ canonicalUrl: /about
 ## Resume
 <i class="fa fa-fw fa-linkedin-square mr-1"></i>See my resume on [LinkedIn](https://www.linkedin.com/in/benmichalski).
 ## Work samples
-<i class="fa fa-fw fa-github mr-1"></i>See my [GitHub repositories](https://github.com/bmichalski).
+<i class="fa fa-fw fa-github mr-1"></i>See my [GitHub repositories](https://github.com/bmichalski) and contributions.
 <div id="contact-info-wrapper" style="display: none;"><h2>Contact me</h2><span><i class="fa fa-envelope mr-1"></i> By email: <a id="email"></a></span></div>
 
 <script type="text/javascript">
