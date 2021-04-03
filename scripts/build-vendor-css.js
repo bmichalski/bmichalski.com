@@ -22,7 +22,7 @@ const promise = new Promise(function (resolve, reject) {
 
 promise
   .then(function (styles) {
-    styles = styles.replace(/url\(node_modules\/font-awesome\/fonts/g, 'url(../fonts')
+    styles = styles.replace(/url\("..\/webfonts/g, 'url("../fonts')
 
     return styles
   })

@@ -4,15 +4,15 @@ title: About
 description: About
 canonicalUrl: /about
 ---
-## About
-<i class="fa fa-fw fa-male mr-1"></i>I am Benjamin Michalski.
+# About
+<i class="fa fa-fw fa-user mr-1"></i>I am Benjamin Michalski.
 ## Work
 <i class="fa fa-fw fa-briefcase mr-1"></i>I engineer web applications. I get things done.
-<i class="fa fa-fw fa-clock-o mr-1"></i>I've been building web apps since 2011<span id="years-counter-wrapper" style="display: none;"> (<span id="years-counter"></span> years, and counting)</span>.
+<i class="fa fa-fw fa-clock mr-1"></i>I've been building web apps since 2011<span id="years-counter-wrapper" style="display: none;"> (<span id="years-counter"></span> years, and counting)</span>.
 ## Resume
-<i class="fa fa-fw fa-linkedin-square mr-1"></i>See my resume on [LinkedIn](https://www.linkedin.com/in/benmichalski).
+<i class="fab fa-fw fa-linkedin mr-1"></i>See my resume on [LinkedIn](https://www.linkedin.com/in/benmichalski).
 ## Work samples
-<i class="fa fa-fw fa-github mr-1"></i>See my [GitHub repositories](https://github.com/bmichalski) and contributions.
+<i class="fab fa-fw fa-github mr-1"></i>See my [GitHub repositories](https://github.com/bmichalski) and contributions.
 <div id="contact-info-wrapper" style="display: none;"><h2>Contact me</h2><span><i class="fa fa-envelope mr-1"></i> By email: <a id="email"></a></span></div>
 
 <script type="text/javascript">

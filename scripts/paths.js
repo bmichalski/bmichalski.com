@@ -34,7 +34,9 @@ module.exports = {
     vendor: {
       src: [
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
-        'node_modules/font-awesome/css/font-awesome.css'
+        'node_modules/@fortawesome/fontawesome-free/css/brands.css',
+        'node_modules/@fortawesome/fontawesome-free/css/solid.css',
+        'node_modules/@fortawesome/fontawesome-free/css/fontawesome.css'
       ],
       temp: root + '/temp/vendor.min.css',
       dest: root + '/build/css/vendor.min.css'
@@ -66,7 +68,7 @@ module.exports = {
   fonts: {
     vendor: {
       fontAwesome: {
-        srcGlob: root + '/node_modules/font-awesome/fonts/*',
+        srcGlob: root + '/node_modules/@fortawesome/fontawesome-free/webfonts/*',
         destPrefix: root + '/build/fonts/'
       }
     }
