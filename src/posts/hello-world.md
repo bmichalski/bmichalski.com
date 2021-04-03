@@ -1,5 +1,5 @@
 ---
-layout: post.html
+layout: post.hbs
 title: Hello, world!
 description: Hello world
 canonicalUrl: /posts/hello-world

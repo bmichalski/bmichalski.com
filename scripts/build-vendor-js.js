@@ -2,17 +2,28 @@
 
 const Promise = require('bluebird')
 const uglify = require('uglify-js')
-const fs = require('fs-promise')
+const fs = require('fs-extra')
 
 const paths = require(__dirname + '/paths')
 
-const promise = new Promise(function (resolve) {
-  const result = uglify.minify(paths.js.vendor.src)
+const promise = Promise
+  .all(
+    paths.js.vendor.src.map(function (fileName) {
+      return fs.readFile(fileName, 'utf8')
+    })
+  ).then(function (contents) {
+    return new Promise(function (resolve, reject) {
+      const result = uglify.minify(contents)
 
-  resolve(result.code)
-})
+      if (result.error) {
+        reject(result.error)
 
-promise
+        return
+      }
+
+      resolve(result.code)
+    })
+  })
   .then(function (code) {
     return fs.outputFile(paths.js.vendor.temp, code)
   })

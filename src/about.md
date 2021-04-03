@@ -1,19 +1,19 @@
 ---
-layout: layout.html
+layout: layout.hbs
 title: About
 description: About
 canonicalUrl: /about
 ---
-## Who I am
-<i class="fa fa-male"></i>&nbsp;&nbsp;I am Benjamin Michalski.
-## What I do
-<i class="fa fa-briefcase"></i>&nbsp;I work as a software engineer.
-<i class="fa fa-clock-o"></i>&nbsp;I've been building web apps since 2011<span id="years-counter-wrapper" style="display: none;"> (<span id="years-counter"></span> years, and counting)</span>.
-## Work samples
-<i class="fa fa-github"></i>&nbsp;You can checkout my [GitHub repositories](https://github.com/bmichalski).
+## About
+<i class="fa fa-fw fa-male mr-1"></i>I am Benjamin Michalski.
+## Work
+<i class="fa fa-fw fa-briefcase mr-1"></i>I engineer web applications. I get things done.
+<i class="fa fa-fw fa-clock-o mr-1"></i>I've been building web apps since 2011<span id="years-counter-wrapper" style="display: none;"> (<span id="years-counter"></span> years, and counting)</span>.
 ## Resume
-<i class="fa fa-linkedin-square"></i>&nbsp;See my resume on [LinkedIn](https://www.linkedin.com/in/benmichalski).
-<div id="contact-info-wrapper" style="display: none;"><h2>Contact me</h2><span><i class="fa fa-envelope"></i> By email: <a id="email"></a></span></div>
+<i class="fa fa-fw fa-linkedin-square mr-1"></i>See my resume on [LinkedIn](https://www.linkedin.com/in/benmichalski).
+## Work samples
+<i class="fa fa-fw fa-github mr-1"></i>See my [GitHub repositories](https://github.com/bmichalski).
+<div id="contact-info-wrapper" style="display: none;"><h2>Contact me</h2><span><i class="fa fa-envelope mr-1"></i> By email: <a id="email"></a></span></div>
 
 <script type="text/javascript">
   'use strict'

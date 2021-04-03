@@ -3,9 +3,10 @@
 const Metalsmith     = require('metalsmith')
 const collections    = require('metalsmith-collections')
 const layouts        = require('metalsmith-layouts')
-const markdown       = require('metalsmith-markdown')
-const permalinks     = require('metalsmith-permalinks')
+const markdown       = require('@metalsmith/markdown')
+const permalinks     = require('@metalsmith/permalinks')
 const pageTitles     = require('metalsmith-page-titles')
+const discoverPartials = require('metalsmith-discover-partials')
 const Promise        = require('bluebird')
 const Handlebars     = require('handlebars')
 const HandlebarsIntl = require('handlebars-intl')
@@ -30,7 +31,7 @@ const promise = new Promise(function (resolve, reject) {
   Metalsmith(__dirname)
     .metadata({
       sitename: 'bmichalski.io',
-      siteurl: 'http://bmichalski.io',
+      siteurl: 'https://bmichalski.io',
       site: {
         title: 'bmichalski.io'
       },
@@ -45,18 +46,22 @@ const promise = new Promise(function (resolve, reject) {
         reverse: true
       }
     }))
-    .use(pageTitles())
     .use(markdown({
       breaks: true
     }))
+    .use(pageTitles())
     .use(permalinks({
       relative: false
+    }))
+    .use(discoverPartials({
+      directory: paths.metalsmith.layouts.partials,
+      pattern: /\.hbs$/
     }))
     .use(layouts({
       engine: 'handlebars',
       strict: true,
+      pattern: '**/*.html',
       directory: paths.metalsmith.layouts.directory,
-      partials: paths.metalsmith.layouts.partials
     }))
     .build(function(err) {
       if (err) {

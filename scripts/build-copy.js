@@ -1,7 +1,7 @@
 'use strict'
 
 const Promise = require('bluebird')
-const fs = require('fs-promise')
+const fs = require('fs-extra')
 const path = require('path')
 const globby = require('globby')
 
@@ -17,7 +17,7 @@ const promise = Promise.all([
   fs.copy(paths.favicon.src, paths.favicon.dest),
   fs.move(paths.not_found.src, paths.not_found.dest)
     .then(function () {
-      return fs.rmdir(paths.not_found.src_folder)
+      return fs.remove(paths.not_found.src_folder)
     }),
   globby(paths.fonts.vendor.fontAwesome.srcGlob)
     .then(function (files) {

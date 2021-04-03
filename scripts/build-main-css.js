@@ -2,7 +2,7 @@
 
 const Promise = require('bluebird')
 const CleanCss = require('clean-css')
-const fs = require('fs-promise')
+const fs = require('fs-extra')
 
 const cleanCss = new CleanCss()
 
