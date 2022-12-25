@@ -27,7 +27,7 @@
       
       <script type="text/javascript">
         'use strict'
-      
+
         var parts = [
          'b',
          'e',
@@ -58,15 +58,15 @@
          'o',
          'm',
         ]
-      
+
         var full = parts.join('')
-      
+
         $('#document').ready(function () {
           $('#years-counter').html(((new Date).getFullYear() - 2011) + 1)
-      
+
           $('#email').html(full)
           $('#email').attr('href', 'mailto:' + full)
-      
+
           $('#years-counter-wrapper').show()
           $('#contact-info-wrapper').show()
         })
