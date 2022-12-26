@@ -1,6 +1,5 @@
 'use strict'
 
-const Promise = require('bluebird')
 const uglify = require('uglify-js')
 const fs = require('fs-extra')
 

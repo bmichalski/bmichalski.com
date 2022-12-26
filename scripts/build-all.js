@@ -1,7 +1,5 @@
 'use strict'
 
-const Promise = require('bluebird')
-
 module.exports = require(__dirname + '/build-metalsmith')
   .then(function () {
     return Promise.all([

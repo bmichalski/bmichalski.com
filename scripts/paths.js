@@ -33,7 +33,7 @@ module.exports = {
     },
     vendor: {
       src: [
-        'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'node_modules/bootstrap/dist/css/bootstrap.css',
         'node_modules/@fortawesome/fontawesome-free/css/brands.css',
         'node_modules/@fortawesome/fontawesome-free/css/solid.css',
         'node_modules/@fortawesome/fontawesome-free/css/fontawesome.css'
@@ -45,9 +45,8 @@ module.exports = {
   js: {
     vendor: {
       src: [
-        root + '/node_modules/jquery/dist/jquery.slim.js',
-        root + '/node_modules/popper.js/dist/umd/popper.js',
-        root + '/node_modules/bootstrap/dist/js/bootstrap.min.js'
+        root + '/node_modules/@popperjs/core/dist/umd/popper.js',
+        root + '/node_modules/bootstrap/dist/js/bootstrap.js'
       ],
       temp: root + '/temp/vendor.min.js',
       dest: root + '/build/js/vendor.min.js'
