@@ -2,36 +2,59 @@
   "name": "bmichalski.io",
   "description": "bmichalski.io",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bmichalski/bmichalski.github.io"
+  "author": {
+    "name": "Benjamin Michalski",
+    "email": "ben@bmichalski.io"
   },
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.2",
-    "@metalsmith/collections": "^1.3",
-    "@metalsmith/layouts": "^2.6",
-    "@metalsmith/markdown": "^1.8",
-    "@metalsmith/permalinks": "^2.4",
-    "bootstrap": "^5.2",
-    "clean-css": "^5.3",
-    "fs-extra": "^11.1",
-    "globby": "^11.1",
-    "handlebars": "^4.7",
-    "handlebars-intl": "^1.1",
-    "jstransformer-handlebars": "^1.2",
-    "metalsmith": "~2.5",
-    "metalsmith-discover-partials": "^0.1",
-    "metalsmith-page-titles": "^1.0",
-    "@popperjs/core": "^2.11",
-    "uglify-js": "^3.17"
+  "contributors": [
+    {
+      "name": "Benjamin Michalski",
+      "email": "ben@bmichalski.io"
+    }
+  ],
+  "type": "module",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@metalsmith/collections": "^1.3.0",
+    "@metalsmith/layouts": "^2.6.0",
+    "@metalsmith/markdown": "^1.8.0",
+    "@metalsmith/permalinks": "^2.4.1",
+    "@popperjs/core": "^2.11.6",
+    "@types/clean-css": "^4.2.6",
+    "@types/fs-extra": "^9.0.13",
+    "@types/metalsmith": "^2.3.1",
+    "@types/node": "^18.11.18",
+    "@types/uglify-js": "^3.17.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "bootstrap": "^5.2.3",
+    "chalk": "^5.2.0",
+    "clean-css": "^5.3.1",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-unicorn": "^44.0.2",
+    "fs-extra": "^11.1.0",
+    "globby": "^11.1.0",
+    "handlebars": "^4.7.7",
+    "handlebars-intl": "^1.1.2",
+    "jstransformer-handlebars": "^1.2.0",
+    "metalsmith": "~2.5.1",
+    "metalsmith-discover-partials": "^0.1.2",
+    "metalsmith-page-titles": "^1.0.2",
+    "prettier": "^2.6.2",
+    "serve": "^14.1.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.5.2",
+    "uglify-js": "^3.17.4"
   },
   "scripts": {
-    "build-all": "node scripts/build-all.js",
-    "build-copy": "node scripts/build-copy.js",
-    "build-metalsmith": "node scripts/build-metalsmith.js",
-    "build-metalsmith-copy": "node scripts/build-metalsmith-copy.js",
-    "build-main-css": "node scripts/build-main-css.js",
-    "build-vendor-css": "node scripts/build-vendor-css.js",
-    "build-vendor-js": "node scripts/build-vendor-js.js"
+    "build-all": "rm -rf build/* && ./node_modules/.bin/ts-node --esm scripts/build-all.ts",
+    "serve": "./node_modules/.bin/serve build"
   }
 }

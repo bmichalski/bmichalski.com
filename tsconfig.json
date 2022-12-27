@@ -1,0 +1,25 @@
+{
+  "include": [
+    ".eslintrc.cjs",
+    ".prettierrc.cjs",
+    "scripts/**/*.ts"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "strict": true,
+    "pretty": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": [
+      "node",
+      "reflect-metadata"
+    ],
+    "outDir": "dist",
+    "module": "es2022",
+    "moduleResolution": "node",
+    "target": "es2022"
+  }
+}
