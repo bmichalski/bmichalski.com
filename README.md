@@ -3,8 +3,8 @@
 ## Start working
 ```sh
 git clone git@github.com:bmichalski/bmichalski.com.git && \
-cd bmichalski.com && \
-git remote add site git@github.com:bmichalski/bmichalski.github.io.git
+git clone git@github.com:bmichalski/bmichalski.github.io.git && \
+cd bmichalski.com
 ```
 
 ## Install vendors
@@ -19,5 +19,6 @@ yarn run build-all
 
 ## Deploy
 ```sh
-git subtree push --prefix build site master
+cd bmichalski.github.io.git && \
+git push
 ```
