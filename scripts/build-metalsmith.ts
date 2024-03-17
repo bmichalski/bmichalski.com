@@ -41,10 +41,10 @@ Handlebars.registerHelper('debug', function (this: any, optionalValue: any) {
 export const buildMetalsmith = async () => {
   const instance = Metalsmith(path.dirname(url.fileURLToPath(import.meta.url)))
     .metadata({
-      sitename: 'bmichalski.io',
-      siteurl: 'https://bmichalski.io',
+      sitename: 'bmichalski.com',
+      siteurl: 'https://bmichalski.com',
       site: {
-        title: 'bmichalski.io',
+        title: 'bmichalski.com',
       },
       authorName: 'Benjamin Michalski',
     })

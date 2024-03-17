@@ -34,8 +34,9 @@ canonicalUrl: /about
    'k',
    'i',
    '.',
-   'i',
+   'c',
    'o',
+   'm',
   ];
   
   const full = parts.join('');

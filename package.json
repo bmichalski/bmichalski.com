@@ -1,15 +1,15 @@
 {
-  "name": "bmichalski.io",
-  "description": "bmichalski.io",
+  "name": "bmichalski.com",
+  "description": "bmichalski.com",
   "license": "MIT",
   "author": {
     "name": "Benjamin Michalski",
-    "email": "ben@bmichalski.io"
+    "email": "ben@bmichalski.com"
   },
   "contributors": [
     {
       "name": "Benjamin Michalski",
-      "email": "ben@bmichalski.io"
+      "email": "ben@bmichalski.com"
     }
   ],
   "type": "module",
