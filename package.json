@@ -54,7 +54,7 @@
     "uglify-js": "^3.17.4"
   },
   "scripts": {
-    "build-all": "rm -rf build/* && ./node_modules/.bin/ts-node --esm scripts/build-all.ts && rm -rf ../bmichalski.github.io/* && cp -r build/* ../bmichalski.github.io",
+    "build-all": "rm -rf build/* && ./node_modules/.bin/ts-node --esm scripts/build-all.ts",
     "serve": "./node_modules/.bin/serve build"
   }
 }
